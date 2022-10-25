@@ -8,7 +8,7 @@ st.title('California Housing Data (1990) by Junjie Lai')
 df = pd.read_csv('housing.csv')
 
 # note that you have to use 0.0 and 40.0 given that the data type of population is float
-value_filter = st.slider('Median House Value:', 0.0, 500000.0, 200000.0)  # min, max, default
+value_filter = st.slider('Minimal Median House Value:', 0.0, 500000.0, 200000.0)  # min, max, default
 
 # create a multi select
 location_filter = st.sidebar.multiselect(
